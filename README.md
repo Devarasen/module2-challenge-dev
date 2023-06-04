@@ -4,9 +4,10 @@
 
 URL: https://devarasen.github.io/module2-challenge-dev/
 
-![Alt text](C:\Users\dev_z\Bootcamp Assignments\module2-challenge-dev\assets\Readme1.PNG)
-
-
+![Alt text](./assets/Readme1.PNG)
+![Alt text](./assets/Readme2.PNG)
+![Alt text](./assets/Readme3.PNG)
+![Alt text](./assets/Readme4.PNG)
 ## Installation
 
 N/A
