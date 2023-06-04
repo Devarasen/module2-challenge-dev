@@ -1,0 +1,227 @@
+:root {
+    --black: #000000;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #ebe9a2;
+}
+
+/* setting header properties */
+.header {
+    padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #ebe9a2;
+    width: 100%;        
+}
+
+ 
+/* setting header title properties */
+.header h1 {
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    background: #673AB7;
+    height: 71px;
+    width: 430px;
+    margin-left: -10px;
+    padding-left: 5px;
+    padding-top: 13px;
+    margin-top: 5px;
+    border: 5px solid black;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* setting nav bar on top right */
+header nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+    text-align:right;    
+    padding-right: 3px;
+}
+
+nav li {
+    box-sizing:unset;
+    display: inline-block;
+}
+
+nav a{
+    text-decoration: none;
+    background: #bd1e43;
+    color: #fff;
+    width: 120px;
+    height: 80px;
+    display: inline-flex;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 5px solid black;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+nav a:hover{
+    background: #353640;
+}
+
+
+/* adding properties and text to placeholder image below navbar*/
+.topimage{
+    width: 100%;
+    height:35vw;
+    background-image: url(./StockPhotoTexture.jpg);
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: 0px;
+}
+
+.welcome{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3vw;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+
+/* Menu classess flexbox layout */
+.menuItem {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+}
+
+.menuTitle {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 5px solid navy;
+}
+
+.menuContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 74%;
+    font-size: 2vw;
+}
+
+
+/* Work section images coding */
+.Work2 img{
+    width: 30%;
+    display: flex;
+    flex-direction: row; 
+    flex-shrink: inherit;   
+    justify-content: space-around;
+}
+
+/* contact me horizontal list */
+
+.menuContent{
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+    text-align:center;    
+    padding-right: 3px;
+    color: #000000;
+}
+
+.menuContent li {
+    padding: 10px;
+    font-size: 15px;
+    align-content: center;
+}
+
+#contact_me ul li{
+    font-size: 2vw;
+    border: 5px solid black;
+    border-radius: 25px;
+    justify-content: space-evenly;
+    margin-right: 20px;
+}
+
+
+/* footer style */
+
+footer {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    font-size: 18px;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* media queries for different devices */
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    .menuContent {    
+        color:black;
+    }
+ }
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .menuContent {
+        color: var(--black);    
+    }
+ }
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .menuItem {
+        flex-wrap: wrap;
+    }
+
+    .menuTitle {        
+        border-radius: 5px solid var(--black); 
+        width: 100%;
+    }
+
+    .menuContent {
+        width: 100%;
+        color: turquoise;
+    }
+    .menuTitle {
+        border: 5px solid navy;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+ }
+
+@media all and (max-width: 480px) {
+    .menuItem {
+        flex-wrap: wrap;
+    }
+
+    .menuTitle {        
+        border-radius: 5px solid var(--black); 
+        width: 100%;
+    }
+
+    .menuContent {
+        width: 100%;
+        color: turquoise;
+    }
+    .menuTitle {
+        border: 5px solid navy;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+ }
+
+
+
